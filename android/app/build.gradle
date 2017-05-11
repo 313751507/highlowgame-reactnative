@@ -72,7 +72,7 @@ apply from: "../../node_modules/react-native/react.gradle"
  *   - An APK that only works on ARM devices
  *   - An APK that only works on x86 devices
  * The advantage is the size of the APK is reduced by about 4MB.
- * Upload all the APKs to the Play Store and people will download
+ * Upload all the APKs to the PlayScreen Store and people will download
  * the correct one based on the CPU architecture of their device.
  */
 def enableSeparateBuildPerCPUArchitecture = false
@@ -126,7 +126,6 @@ android {
 }
 
 dependencies {
-    compile project(':react-native-svg')
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile "com.android.support:appcompat-v7:23.0.1"
     compile "com.facebook.react:react-native:+"  // From node_modules
